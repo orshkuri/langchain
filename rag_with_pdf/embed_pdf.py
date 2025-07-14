@@ -59,28 +59,3 @@ if not os.path.exists(persistent_directory):
 else:
     print("Vector store already exists. No need to initialize.")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-from langchain_community.document_loaders import UnstructuredPDFLoader
-
-file_path = "hebrew_policy.pdf"
-loader = UnstructuredPDFLoader(file_path)
-print('now')
-
-docs = loader.load()
-print('now')
-
-print(docs[0].metadata)
